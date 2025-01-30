@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #1e1bf0;
+}
+
+header {
+    background: #0186f3;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.login-hero {
+    background: url('login-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.login-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 137, 224, 0.5);
+}
+
+.login-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.login-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.login-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    background: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #051df5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #fa054e;
+}
+
+.login-form p {
+    margin-top: 20px;
+}
+
+.login-form a {
+    color: #a09ae7;
+    text-decoration: none;
+}
+
+footer {
+    background: #0f86f5;
+    color: #f4f4f8;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}

@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now - MyShop</title>
+    <link rel="stylesheet" href="style 9.css">
+</head>
+<body>
+    <section class="buy-now">
+        <div class="product-details">
+            <img id="product-image" src="OIP (5).jpg" alt="Product Image">
+            <div class="product-info">
+                <h1 id="product-title">Product Title</h1>
+                <p id="product-description">Product Description</p>
+                <p id="product-price">$49.99</p>
+                <form action="#" method="post" class="purchase-form">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button type="submit" class="buy-now-btn">Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-methods">
+        <h2>Choose a Payment Method</h2>
+        <div class="payment-options">
+            <div class="payment-option">
+                <img src="credit card.jpg" alt="Credit Card">
+                <p>Credit Card</p>
+            </div>
+            <div class="payment-option">
+                <img src="paypal.jpg" alt="PayPal">
+                <p>PayPal</p>
+            </div>
+            <div class="payment-option">
+                <img src="bank transfer.jpg" alt="Bank Transfer">
+                <p>Bank Transfer</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Email: mihisurubalasooriya@gmail.com | Phone:  0722816742</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const title = urlParams.get('title');
+            const description = urlParams.get('description');
+            const price = urlParams.get('price');
+            const image = urlParams.get('image');
+
+            if (title) document.getElementById('product-title').textContent = title;
+            if (description) document.getElementById('product-description').textContent = description;
+            if (price) document.getElementById('product-price').textContent = '$' + price;
+            if (image) document.getElementById('product-image').src = image;
+        });
+    </script>
+    <script>
+        document.getElementById('quantity').addEventListener('input', function() {
+            const quantity = this.value;
+            const pricePerItem = 49.99;
+            const totalPrice = (pricePerItem * quantity).toFixed(2);
+            document.getElementById('price').textContent = totalPrice;
+        });
+
+        document.querySelector('.buy-now').addEventListener('click', function() {
+            const paymentMethods = document.getElementsByName('payment-method');
+            let selectedMethod = null;
+
+            paymentMethods.forEach(function(method) {
+                method.parentNode.classList.remove('highlight'); // Remove highlight from all
+                if (method.checked) {
+                    selectedMethod = method.value;
+                    method.parentNode.classList.add('highlight'); // Highlight the selected one
+                }
+            });
+
+            if (!selectedMethod) {
+                alert('Please choose a payment method.');
+            } else {
+                window.location.href = 'https://www.example.com/checkout'; // Replace with your desired URL
+            }
+        });
+
+        document.getElementsByName('payment-method').forEach(function(method) {
+            method.addEventListener('change', function() {
+                document.getElementsByName('payment-method').forEach(function(m) {
+                    m.parentNode.classList.remove('highlight');
+                });
+                method.parentNode.classList.add('highlight');
+            });
+        });
+    </script>
+
+</body>
+</html>

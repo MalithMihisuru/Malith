@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f506a5;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #d50cf0;
+    color: #f1e0ef;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.clothing-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(33% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #e958e2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e2fa0a;
+    line-height: 1.6;
+}
+
+.buy-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #9af30a;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(253, 6, 6, 0.1);
+}
+
+.product-details {
+    display: flex;
+}
+
+.product-details img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.product-info h1 {
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+}
+
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-form label {
+    margin-bottom: 5px;
+}
+
+.purchase-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buy-now-btn {
+    background: #09f801;
+    color: #0e0000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now-btn:hover {
+    background: #f50303;
+}
+
+.payment-methods {
+    text-align: center;
+    padding: 40px 20px;
+    background: #0ae2ff;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(245, 4, 4, 0.1);
+}
+
+.payment-methods h2 {
+    margin-bottom: 20px;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payment-option {
+    text-align: center;
+}
+
+.payment-option img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #fc0202;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

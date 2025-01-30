@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #25dbf3;
+}
+
+header {
+    background: #28f8f8;
+    color: #8f08fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #0329fd;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header .search-bar input {
+    padding: 5px;
+}
+
+header .user-cart a {
+    color: #052afa;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-hero {
+    background: url('eye.jpg') no-repeat center center/cover;
+    color: #011512;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.contact-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(193, 211, 236, 0.5);
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background: #56fcfc;
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-method {
+    flex: 1 1 calc(33.333% - 40px);
+    background: #78f1e7;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-method h3 {
+    margin-bottom: 10px;
+}
+
+.contact-method p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background: #6ff7f0;
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ee1935;
+    color: #b0e0ec;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0cf00c;
+}
+
+footer {
+    background: #584cf5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+}

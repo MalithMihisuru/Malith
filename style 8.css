@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f51b76;
+}
+
+header {
+    background: #f50599;
+    color: #ebdde7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: #e6e7f7;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header .search-bar input {
+    padding: 5px;
+}
+
+header .user-cart a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.women-clothing-hero {
+    background: url('women-clothing-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.women-clothing-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(151, 2, 94, 0.281);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.clothing-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.gallery-item {
+    background: #f01faa;
+    margin: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+    width: 350px;
+    height: 700px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 80%;
+    
+}
+
+.gallery-item h3, .gallery-item p {
+    margin: 10px 0;
+}
+
+.product-details {
+    background: rgba(8, 8, 8, 0.8);
+    color: #29eaf8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-details.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.details-content {
+    background: #f4dc0b;
+    color: #fd0505;
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    position: center;
+    height: 100%;
+}
+
+.details-content img {
+    max-width: 100%;
+    height: 80%;
+}
+
+.buy-now-btn, .close-btn {
+    background: #51f505;
+    color: #0b3074;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.buy-now-btn:hover, .close-btn:hover {
+    background: #fc020e;
+}
+
+footer {
+    background: #f007aa;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.women-clothing-hero{
+    background: url('free shipping.jpg') no-repeat center center/cover;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding: auto;
+    position: relative;
+}
+.clothing-gallery{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: center ;
+}
